@@ -221,6 +221,8 @@ __(optional) Add the following lines to the pi user's crontab (note you may need
 
 @sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium-browser/Default/Preferences
 
+@rm -rf ~/.config/chromium/Singleton*
+
 @chromium-browser --kiosk --no-first-run --noerrdialogs --disable-infobars --incognito --disable-java --disable-plugins http://localhost
 ```
 
